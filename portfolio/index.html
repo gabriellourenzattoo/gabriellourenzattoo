@@ -1,1 +1,199 @@
 
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Gabriel Lourenzatto | Desenvolvedor full-stack</title>
+  <meta name="description" content="Portfólio de Gabriel Lourenzatto, desenvolvedor full-stack. Aplicações completas, do backend ao deploy: pagamentos Pix, gamificação e IA.">
+  <meta name="theme-color" content="#0b1020">
+  <!-- [NOVO] Informa ao navegador que a página suporta tema claro e escuro -->
+  <meta name="color-scheme" content="dark light">
+  <meta property="og:title" content="Gabriel Lourenzatto | Desenvolvedor full-stack">
+  <meta property="og:description" content="Aplicações completas, do backend ao deploy.">
+  <meta property="og:type" content="website">
+  <!-- Favicon simples (SVG embutido) -->
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%236c9bff'/%3E%3Ctext x='16' y='23' font-size='20' font-family='sans-serif' font-weight='700' text-anchor='middle' fill='%230b1020'%3EG%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=Hanken+Grotesk:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <!-- [ALTERADO] sem "defer": o tema é aplicado antes da primeira pintura (evita flash) -->
+  <script src="script.js"></script>
+</head>
+<body>
+
+  <!-- ===== CABEÇALHO ===== -->
+  <header class="header">
+    <!-- [CORREÇÃO 2] .header__inner: max-width e padding iguais aos das seções (menu não encosta/corta na borda) -->
+    <div class="header__inner">
+    <a class="logo" href="#inicio">Gabriel L.</a>
+    <div class="header__actions">
+      <!-- [NOVO] Botão de alternância claro/escuro (sol/lua) -->
+      <button class="theme-btn" type="button" aria-label="Alternar tema">
+        <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2m-7.07-2.93 1.41-1.41m11.32-11.32 1.41-1.41M2 12h2m16 0h2M4.93 4.93l1.41 1.41m11.32 11.32 1.41 1.41"/></svg>
+        <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></svg>
+      </button>
+      <button class="nav-toggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu">
+        <span></span><span></span>
+      </button>
+    </div>
+    <nav id="menu" class="nav">
+      <a href="#sobre">Sobre</a>
+      <a href="#projetos">Projetos</a>
+      <a href="#habilidades">Habilidades</a>
+      <a href="#contato">Contato</a>
+    </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- ===== HERO ===== -->
+    <section id="inicio" class="hero">
+      <!-- [CORREÇÃO 1] FOTO DE PERFIL. Arquivo esperado: assets/images/profile/profile.jpg
+           (se usar PNG, troque o src para assets/images/profile/profile.png). Quadrada, ~600x600px.
+           Se a imagem não carregar, o onerror ativa o ícone de usuário (sem texto "alt" vazando). -->
+      <figure class="hero__photo">
+        <svg class="hero__photo-fallback" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-8 8-8s8 3.6 8 8"/></svg>
+        <img src="assets/images/profile/profile.jpg" alt="Foto de Gabriel Lourenzatto" width="600" height="600" fetchpriority="high" onerror="this.parentElement.classList.add('is-missing')">
+      </figure>
+      <div class="hero__text">
+        <h1>Gabriel Lourenzatto</h1>
+        <p class="hero__lead">Desenvolvedor que cria aplicações completas, do backend ao deploy.</p>
+        <!-- [ALTERADO] Parágrafo virou lista de especialidades com emojis -->
+        <ul class="hero__list">
+          <li><span aria-hidden="true">💳</span>Pedidos com pagamento via Pix</li>
+          <li><span aria-hidden="true">🎮</span>Gamificação com missões, XP e ranks</li>
+          <li><span aria-hidden="true">🧠</span>IA para estimativas e detecção de pose</li>
+          <li><span aria-hidden="true">🚀</span>Do backend ao deploy, no ar de verdade</li>
+        </ul>
+        <div class="actions">
+          <a class="btn btn--primary" href="#projetos">Ver projetos</a>
+          <a class="btn btn--ghost" href="#contato">Entrar em contato</a>
+        </div>
+      </div>
+
+      <!-- [ALTERADO] Janela de status: indicador "Online", ícone por linha, rótulo/valor com mais contraste -->
+      <div class="status" aria-label="Resumo do perfil">
+        <div class="status__bar">Status <span class="live"><i></i>Online</span></div>
+        <dl>
+          <div><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg><dt>Classe</dt><dd>Desenvolvedor full-stack</dd></div>
+          <div><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg><dt>Foco</dt><dd>Backend, pagamentos, deploy</dd></div>
+          <div><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z"/><path d="m12 15-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z"/><path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0"/><path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"/></svg><dt>Projetos no ar</dt><dd>2</dd></div>
+          <div><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"/><line x1="4" y1="22" x2="4" y2="15"/></svg><dt>Missão atual</dt><dd>Tirar a sua ideia do papel</dd></div>
+        </dl>
+      </div>
+    </section>
+
+    <!-- ===== SOBRE ===== -->
+    <section id="sobre" class="section reveal">
+      <h2>Sobre mim</h2>
+      <div class="about">
+        <p>Gosto de ver ideias saírem do papel e virarem produto. Meus projetos não ficam na pasta do computador: estão publicados, com link, usuários e pagamentos funcionando.</p>
+        <p>Cuido do projeto inteiro, do banco de dados à tela, e termino colocando tudo no ar.</p>
+        <ul class="focus">
+          <li><strong>Full-stack</strong> Da API à interface.</li>
+          <li><strong>Pagamentos</strong> Pix integrado ao pedido.</li>
+          <li><strong>Gamificação</strong> Missões, XP e evolução.</li>
+          <li><strong>Deploy</strong> Hospedagem e publicação.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ===== PROJETOS ===== -->
+    <section id="projetos" class="section reveal">
+      <h2>Projetos</h2>
+      <div class="projects">
+
+        <!-- Projeto 1: ASCEND -->
+        <article class="card">
+          <!-- [ALTERADO] CAPA. Substitua o arquivo: assets/images/projects/ascend-cover.jpg (16:9, ~1280x720px) -->
+          <div class="card__media">
+            <img src="assets/images/projects/ascend-cover.jpg" alt="Tela do ASCEND, sistema de evolução diária" width="1280" height="720" loading="lazy">
+          </div>
+          <div class="card__body">
+            <h3>ASCEND</h3>
+            <p>Aplicação web/APK que transforma a rotina diária em RPG, inspirada em Solo Leveling: missões diárias, XP, atributos e ranks evolutivos de E a S.</p>
+            <p>Traz uma biblioteca de exercícios científicos por grupo muscular, nos níveis iniciante, intermediário e avançado. A câmera confirma o exercício com IA de detecção de pose.</p>
+            <ul class="tags">
+              <li>Web app</li><li>Gamificação</li><li>Visão computacional</li>
+            </ul>
+            <div class="links">
+              <a href="https://ascend-sistema.onrender.com" target="_blank" rel="noopener">Ver ao vivo</a>
+              <!-- TROCAR pelo link do repositório do ASCEND -->
+              <a href="https://github.com/gabriellourenzattoo" target="_blank" rel="noopener">Ver código</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Projeto 2: The Grill Mill -->
+        <article class="card">
+          <!-- [ALTERADO] CAPA. Substitua o arquivo: assets/images/projects/grill-mill-cover.jpg (16:9, ~1280x720px) -->
+          <div class="card__media">
+            <img src="assets/images/projects/grill-mill-cover.jpg" alt="Tela do site The Grill Mill" width="1280" height="720" loading="lazy">
+          </div>
+          <div class="card__body">
+            <h3>The Grill Mill</h3>
+            <p>Site completo para hamburgueria: pedidos online, pagamento via Pix e aviso automático ao proprietário a cada novo pedido.</p>
+            <p>O dono configura os horários de funcionamento em um painel, e uma IA calcula a estimativa de entrega. O cliente pode fazer login ou pedir como convidado.</p>
+            <ul class="tags">
+              <li>Pagamento Pix</li><li>Notificações em tempo real</li><li>Estimativa com IA</li>
+            </ul>
+            <div class="links">
+              <!-- ADICIONAR link ao vivo: <a href="URL" target="_blank" rel="noopener">Ver ao vivo</a> -->
+              <!-- TROCAR pelo link do repositório do The Grill Mill -->
+              <a href="https://github.com/gabriellourenzattoo" target="_blank" rel="noopener">Ver código</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Espaço para o próximo projeto. Para adicionar: copie um <article class="card"> acima. -->
+        <article class="card card--next">
+          <!-- [NOVO] CAPA do template. Para um projeto novo, use: assets/images/projects/<nome-do-projeto>-cover.jpg -->
+          <div class="card__media">
+            <img src="assets/images/projects/next-project-cover.jpg" alt="Espaço reservado para o próximo projeto" width="1280" height="720" loading="lazy">
+          </div>
+          <div class="card__body">
+            <p>O próximo projeto pode ser o seu.</p>
+            <a href="#contato">Vamos conversar</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ===== HABILIDADES ===== -->
+    <!-- CONFIRMAR/AJUSTAR: tecnologias inferidas a partir dos projetos -->
+    <section id="habilidades" class="section reveal">
+      <h2>Habilidades</h2>
+      <div class="skills">
+        <div><h3>Frontend</h3><ul class="tags"><li>HTML5</li><li>CSS3</li><li>JavaScript</li><li>Design responsivo</li></ul></div>
+        <div><h3>Backend</h3><ul class="tags"><li>Node.js</li><li>APIs REST</li><li>Banco de dados</li><li>Login e autenticação</li></ul></div>
+        <div><h3>Ferramentas e deploy</h3><ul class="tags"><li>Git e GitHub</li><li>Render</li><li>GitHub Pages</li></ul></div>
+        <div><h3>Outros</h3><ul class="tags"><li>Pagamentos Pix</li><li>Notificações em tempo real</li><li>Detecção de pose por IA</li><li>IA para estimativas</li></ul></div>
+      </div>
+    </section>
+
+    <!-- ===== CONTATO ===== -->
+    <section id="contato" class="section reveal">
+      <h2>Vamos tirar sua ideia do papel?</h2>
+      <p class="contact__lead">Conte o que você precisa. Respondo rápido, por onde for mais fácil para você.</p>
+      <div class="contact">
+        <a href="https://wa.me/5561982856856?text=Ol%C3%A1%20Gabriel%2C%20vi%20seu%20portf%C3%B3lio!" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/></svg>
+          <span>WhatsApp<small>(61) 98285-6856</small></span>
+        </a>
+        <a href="mailto:gabriel.lourenzatto.o@gmail.com">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+          <span>Email<small>gabriel.lourenzatto.o@gmail.com</small></span>
+        </a>
+        <a href="https://github.com/gabriellourenzattoo" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
+          <span>GitHub<small>gabriellourenzattoo</small></span>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">© <span id="ano"></span> Gabriel Lourenzatto</footer>
+</body>
+</html>
