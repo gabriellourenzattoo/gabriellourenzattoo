@@ -23,7 +23,7 @@
 </p>
 
 <p align="center">
-  <img src="https://readme-typing-svg.demolab.com/?font=Share+Tech+Mono&pause=1000&color=00F5FF&center=true&vCenter=true&width=600&lines=Explorando+o+mundo+cyber+%F0%9F%92%99;Programador+em+Python%2C+JavaScript+e+C;Come%C3%A7ando+a+dominar+o+Git+%F0%9F%94%97;Bem-vindo(a)+ao+meu+perfil!" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.demolab.com/?font=Share+Tech+Mono&pause=1000&color=00F5FF&center=true&vCenter=true&width=600&lines=Explorando+o+mundo+cyber+%F0%9F%92%99;Programador+em+Python%2C+JavaScript%2C+C%23+e+C;Come%C3%A7ando+a+dominar+o+Git+%F0%9F%94%97;Bem-vindo(a)+ao+meu+perfil!" alt="Typing SVG" />
 </p>
 
 <p align="center">
