@@ -35,8 +35,8 @@
 ## 🩸 Sobre mim
 
 <p align="left">
-  &nbsp;&nbsp;&nbsp;&nbsp;📚 Nas horas vagas, você me encontra lendo<br>
-  &nbsp;&nbsp;&nbsp;&nbsp;🧠 Começando a dominar o Git e o fluxo de versionamento agora<br>
+  &nbsp;&nbsp;&nbsp;&nbsp;📚 Nas horas vagas, você me encontra lendo;<br>
+  &nbsp;&nbsp;&nbsp;&nbsp;🧠 Começando a dominar o Git e o fluxo de versionamento agora;<br>
   &nbsp;&nbsp;&nbsp;&nbsp;🌑 Tema escuro sempre. Sem exceções.
 </p>
 
@@ -49,9 +49,9 @@
 ## 🎯 Foco atual
 
 <p align="left">
-  &nbsp;&nbsp;&nbsp;&nbsp;🔭 Explorando o caminho entre <b>Cyber</b> e <b>Full-Stack</b><br>
-  &nbsp;&nbsp;&nbsp;&nbsp;🌱 Absorvendo lógica, fundamentos e boas práticas<br>
-  &nbsp;&nbsp;&nbsp;&nbsp;💜 Construindo minha stack aos poucos
+  &nbsp;&nbsp;&nbsp;&nbsp;🔭 Explorando o caminho entre <b>Cyber</b> e <b>Full-Stack</b>;<br>
+  &nbsp;&nbsp;&nbsp;&nbsp;🌱 Absorvendo lógica, fundamentos e boas práticas;<br>
+  &nbsp;&nbsp;&nbsp;&nbsp;💜 Construindo minha stack aos poucos.
 </p>
 
 ---
