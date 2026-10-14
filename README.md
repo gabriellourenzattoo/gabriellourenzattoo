@@ -35,8 +35,8 @@
 ## 🩸 Sobre mim
 
 <p align="left">
-  &nbsp;&nbsp;&nbsp;&nbsp;📚 Nas horas vagas, você me encontra lendo;<br>
-  &nbsp;&nbsp;&nbsp;&nbsp;🧠 Começando a dominar o Git e o fluxo de versionamento agora;<br>
+  &nbsp;&nbsp;&nbsp;&nbsp;📚 Nas horas vagas, você me encontra lendo.<br>
+  &nbsp;&nbsp;&nbsp;&nbsp;🧠 Começando a dominar o <b>C#</b> agora.<br>
   &nbsp;&nbsp;&nbsp;&nbsp;🌑 Tema escuro sempre. Sem exceções.
 </p>
 
@@ -49,8 +49,8 @@
 ## 🎯 Foco atual
 
 <p align="left">
-  &nbsp;&nbsp;&nbsp;&nbsp;🔭 Explorando o caminho entre <b>Cyber</b> e <b>Full-Stack</b>;<br>
-  &nbsp;&nbsp;&nbsp;&nbsp;🌱 Absorvendo lógica, fundamentos e boas práticas;<br>
+  &nbsp;&nbsp;&nbsp;&nbsp;🔭 Explorando o caminho entre <b>Cyber</b> e <b>Full-Stack</b>.<br>
+  &nbsp;&nbsp;&nbsp;&nbsp;🌱 Absorvendo lógica, fundamentos e boas práticas.<br>
   &nbsp;&nbsp;&nbsp;&nbsp;💜 Construindo minha stack aos poucos.
 </p>
 
@@ -61,6 +61,7 @@
 <p align="center">
   <img src="https://img.shields.io/badge/Python-0F52BA?style=for-the-badge&logo=python&logoColor=white" />
   <img src="https://img.shields.io/badge/JavaScript-00A8E8?style=for-the-badge&logo=javascript&logoColor=white" />
+  <img src="https://img.shields.io/badge/C%23-2563EB?style=for-the-badge&logo=c&logoColor=white" />
   <img src="https://img.shields.io/badge/C-001233?style=for-the-badge&logo=c&logoColor=white" />
   <img src="https://img.shields.io/badge/Git-0F52BA?style=for-the-badge&logo=git&logoColor=white" />
   <img src="https://img.shields.io/badge/VS%20Code-00A8E8?style=for-the-badge&logo=visualstudiocode&logoColor=white" />
@@ -71,7 +72,7 @@
 ## 🌐 Onde me encontrar
 
 <p align="center">
-  <a href="https://www.instagram.com/g.lourenzatto/" target="_blank"><img src="https://img.shields.io/badge/Instagram-0F52BA?style=for-the-badge&logo=instagram&logoColor=white" /></a>
+  <a href="https://https://www.instagram.com/its.lztto/" target="_blank"><img src="https://img.shields.io/badge/Instagram-0F52BA?style=for-the-badge&logo=instagram&logoColor=white" /></a>
   <a href="https://discord.gg/WfGXMJER" target="_blank"><img src="https://img.shields.io/badge/Discord-00A8E8?style=for-the-badge&logo=discord&logoColor=white" /></a>
   <a href="mailto:gabriel.lourenzatto.o@gmail.com"><img src="https://img.shields.io/badge/Gmail-001233?style=for-the-badge&logo=gmail&logoColor=white" /></a>
 </p>
